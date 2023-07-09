@@ -6,7 +6,7 @@ public class RecommendatorImpl implements Recommendator {
     private String drink;
 
     public RecommendatorImpl() {
-        System.out.println("Recomendator was created");
+        System.out.println("Вызван конструктор класса RecomendatorImpl");
     }
 
     @Override

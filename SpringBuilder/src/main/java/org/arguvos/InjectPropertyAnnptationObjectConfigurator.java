@@ -23,7 +23,7 @@ public class InjectPropertyAnnptationObjectConfigurator implements ObjectConfigu
 
     @SneakyThrows
     @Override
-    public void configure(Object obj) {
+    public void configure(Object obj, ApplicationContext context) {
         Class<?> implClass = obj.getClass();
         for (Field field : implClass.getDeclaredFields()) {
             InjectProperty annotation = field.getAnnotation(InjectProperty.class);

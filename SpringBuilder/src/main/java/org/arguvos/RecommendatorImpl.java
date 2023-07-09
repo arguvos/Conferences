@@ -1,5 +1,6 @@
 package org.arguvos;
 
+@Deprecated
 @Singleton
 public class RecommendatorImpl implements Recommendator {
     @InjectProperty("wisky")
